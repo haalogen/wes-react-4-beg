@@ -1,4 +1,4 @@
-export function formatPrice(cents) {
+export function formatPrice(cents) { /* For named import */
   return `$${(cents / 100).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
 }
 

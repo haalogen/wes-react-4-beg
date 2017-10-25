@@ -13,7 +13,7 @@ import StorePicker from './components/StorePicker';
 const repo = `/${window.location.pathname.split('/')[1]}/`;
 const Root = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={repo}>
       {/* `basename` attr shows subfolder (Github repo) where site
           is deployed: example.com/{repo}/ */}
       {/* <Match/> can't be a child of Browser */}
